@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #fff!important;
+  --bs-table-bg-type: none!important
+}
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: #ECF1F8!important;
+  --bs-table-bg-type: none!important
+}
+.table-striped thead tr{
+  background-color: #fff!important;
+}
+
+.table td {
+  border: none!important;
+  padding: 1.2rem!important;
+  font-weight: 700!important;
+}
+.table th {
+  padding: 1.2rem!important;
+}
+.table thead th {
+  border-bottom: 3px solid #ff9760!important;
+  color: #0f75df!important;
+  text-transform: uppercase!important;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif!important;
+  font-weight: 600!important;
+  font-style: normal!important;
+  font-size: 80px!important;
+  color: #fff!important;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
